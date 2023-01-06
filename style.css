@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Shrikhand&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Jua', cursive;
+}
+h1 {
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #b15314;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #009973;
+}
+#board {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 120px;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6)~.box {
+    border-bottom: none;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #1a1a00;
+    color: #b15314;
+    border-color: #1a1a00;
+    font-size: 18px;
+    transition: 200ms;
+    font-weight: 600;
+    margin-top: 23px;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: #009973
+}
